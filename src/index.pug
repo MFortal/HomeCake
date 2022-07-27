@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Кондитерская Анны
+    body
+        header
+          nav.menu
+            ul.menu__ul
+              each value in ['Обо мне','Отзывы','Ассортимент','Вкусы', 'Контакты']
+                li
+                  a(href="#")=value
+                  
+        script(src='./main.js')

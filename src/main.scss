@@ -1,0 +1,43 @@
+$color_back: white;
+$color_text: #37353a;
+$color_header: rgba(255, 255, 255, 0.8);
+$color_line: #f19aff;
+$color_pink: #d47890;
+$color_saturatedPink: #df3c66;
+$color__buttonBack: #f7cdc0;
+$color_buttonText: #8b2a64;
+
+body {
+  background-color: $color_back;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color_text;
+}
+
+header {
+  box-sizing: border-box;
+
+  padding: 0px 100px;
+  background: $color_header;
+  border-bottom: 1px solid $color_line;
+}
+
+a {
+  text-decoration: none;
+  color: $color_text;
+}
+li {
+  list-style-type: none;
+}
+
+.menu__ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
