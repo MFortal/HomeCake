@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/MFortal/HomeCake#readme",
   "devDependencies": {
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14",
     "pug": "^3.0.2",
     "sass": "^1.54.0"
   }
