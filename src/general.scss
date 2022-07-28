@@ -7,13 +7,33 @@ $color_saturatedPink: #df3c66;
 $color__buttonBack: #f7cdc0;
 $color_buttonText: #8b2a64;
 
+header,
+main {
+  border-bottom: 1px solid $color_line;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+ul {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
 body {
   background-color: $color_back;
 
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 28px;
   color: $color_text;
 }
@@ -21,9 +41,12 @@ body {
 header {
   box-sizing: border-box;
 
-  padding: 0px 100px;
+  padding: 20px 100px;
   background: $color_header;
-  border-bottom: 1px solid $color_line;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -34,10 +57,15 @@ li {
   list-style-type: none;
 }
 
-.menu__ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
+.heading {
+  font-family: "FoglihtenNo06";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+
+  letter-spacing: 0.02em;
+  color: $color_text;
 }
+
+@import "./scss/main";
