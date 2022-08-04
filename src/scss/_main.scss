@@ -1,6 +1,6 @@
 .main {
   height: 735px;
-  padding: 69px 100px 0;
+  padding-top: 69px;
 
   position: relative;
 }
@@ -36,7 +36,7 @@
 .main__foto2 {
   height: 100%;
   width: 435px;
-  background-image: url("./img/main2.jpg");
+  background-image: url("./img/_main/main2.jpg");
 
   position: absolute;
   top: 0;
@@ -47,7 +47,7 @@
   width: 350px;
   height: 400px;
   border-radius: 175px 175px 0px 0px;
-  background-image: url("./img/main1.jpg");
+  background-image: url("./img/_main/main1.jpg");
 
   position: absolute;
   right: 287px;
@@ -78,7 +78,7 @@
   width: 90px;
   height: 60px;
 
-  background: url("./img/main4.jpg");
+  background: url("./img/_main/main4.jpg");
   border-radius: 50px 50px 0px 0px;
 }
 
@@ -86,8 +86,8 @@
   width: 60px;
   height: 60px;
 
-  background: url("./img/main3.jpg");
-  border-radius: 42.1429px;
+  background: url("./img/_main/main3.jpg");
+  border-radius: 42px;
 }
 
 .main__text {

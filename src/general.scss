@@ -8,7 +8,7 @@ $color__buttonBack: #f7cdc0;
 $color_buttonText: #8b2a64;
 
 header,
-main {
+.container {
   border-bottom: 1px solid $color_line;
 }
 
@@ -45,7 +45,8 @@ header {
   background: $color_header;
 }
 
-p {
+p,
+h1 {
   margin: 0;
 }
 
@@ -68,4 +69,19 @@ li {
   color: $color_text;
 }
 
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+
 @import "./scss/main";
+@import "./scss/about";
