@@ -85,8 +85,13 @@ li {
   gap: 50px;
 }
 
+.link__img {
+  width: 42px;
+}
+
 @import "./scss/main";
 @import "./scss/about";
 @import "./scss/advantage";
 @import "./scss/assortment";
 @import "./scss/taste";
+@import "./scss/footer";
