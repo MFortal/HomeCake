@@ -67,6 +67,8 @@ li {
 
   letter-spacing: 0.02em;
   color: $color_text;
+
+  text-transform: uppercase;
 }
 
 .container {
@@ -86,3 +88,4 @@ li {
 @import "./scss/main";
 @import "./scss/about";
 @import "./scss/advantage";
+@import "./scss/assortment";

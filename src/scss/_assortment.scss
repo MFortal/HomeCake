@@ -1,0 +1,68 @@
+.cards {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.card {
+  padding: 0px 70px 50px;
+
+  border-bottom: 1px solid $color_line;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card__img {
+  width: 45%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.card__info {
+  width: 45%;
+
+  padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.img {
+  object-fit: cover;
+}
+
+.card__info_title {
+  font-size: 32px;
+  line-height: 41px;
+
+  letter-spacing: 0.05em;
+}
+
+.card__info_price {
+  font-family: "FoglihtenNo06";
+  letter-spacing: 0.05em;
+  color: $color_buttonText;
+
+  display: inline-block;
+
+  padding: 16px 24px;
+  background-color: $color__buttonBack;
+}
+
+.card__info_main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
