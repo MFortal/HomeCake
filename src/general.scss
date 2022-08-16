@@ -4,7 +4,7 @@ $color_header: rgba(255, 255, 255, 0.8);
 $color_line: #f19aff;
 $color_pink: #d47890;
 $color_saturatedPink: #df3c66;
-$color__buttonBack: #f7cdc0;
+$color_buttonBack: #f7cdc0;
 $color_buttonText: #8b2a64;
 
 header,
@@ -94,4 +94,5 @@ li {
 @import "./scss/advantage";
 @import "./scss/assortment";
 @import "./scss/taste";
+@import "./scss/review";
 @import "./scss/footer";
