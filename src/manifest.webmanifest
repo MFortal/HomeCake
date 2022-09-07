@@ -1,0 +1,35 @@
+{
+   "name": "HackerWeb",
+  "background_color": "red",
+  "icons": [{
+    "src": "img/icon/icon48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+},
+{
+    "src": "img/icon/icon64.png",
+    "sizes": "64x64",
+    "type": "image/png"
+},
+{
+    "src": "img/icon/icon72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+},
+{
+    "src": "img/icon/icon96.png",
+    "sizes": "96x96",
+    "type": "image/png"
+},
+{
+    "src": "img/icon/icon256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+},
+{
+    "src": "img/icon/icon512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+}
+]
+  }
