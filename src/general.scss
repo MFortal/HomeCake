@@ -94,13 +94,25 @@ li {
 }
 
 .svg_social {
-  // width: 55px;
-  // height: 55px;
   fill: $color_saturatedPink;
+  transform: scale(1.1);
 }
 
 .svg_social:hover {
   fill: $color_pink;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fade-in 2s ease;
 }
 
 @import "./scss/main";
