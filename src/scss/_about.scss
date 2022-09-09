@@ -5,6 +5,10 @@
   gap: 50px;
 }
 
+.about {
+  overflow: hidden;
+}
+
 .about__main {
   position: relative;
   width: 100%;
@@ -48,6 +52,30 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.about__text_left,
+.about__info_left,
+.about__text_right,
+.about__info_right {
+  opacity: 0;
+  transition: all 1s ease 2s;
+}
+
+.about__text_left._active,
+.about__info_left._active,
+.about__text_right._active,
+.about__info_right._active {
+  opacity: 1;
+}
+
+.about {
+  transform: translate(-150%, 0px);
+  transition: all 2.5s ease 0s;
+}
+
+.about._active {
+  transform: translate(0px, 0px);
 }
 
 .about__text_right {

@@ -7,7 +7,7 @@ if (items.length > 0) {
       const item = items[index];
       const itemHeight = item.offsetHeight;
       const itemOffset = offset(item).top;
-      const start = 4;
+      const start = 2;
 
       let itemPoint = window.innerHeight - itemHeight / start;
 
