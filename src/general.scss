@@ -7,6 +7,10 @@ $color_saturatedPink: #df3c66;
 $color_buttonBack: #f7cdc0;
 $color_buttonText: #8b2a64;
 
+html {
+  scroll-behavior: smooth;
+}
+
 header,
 .container {
   border-bottom: 1px solid $color_line;
