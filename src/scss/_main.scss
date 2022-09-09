@@ -25,15 +25,22 @@
   gap: 35px;
 
   z-index: 2;
-
-  opacity: 0;
-  transition: all 1.5s ease 0s;
-  transform: translate(0px, 100%);
 }
 
-.main__info._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
+@keyframes main-in {
+  0% {
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+    transform: translate(0px, 100%);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+.main__info {
+  animation: main-in 2s ease;
 }
 
 .main__fotos {
