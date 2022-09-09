@@ -58,6 +58,10 @@ li {
   list-style-type: none;
 }
 
+.menu__item:hover {
+  color: $color_saturatedPink;
+}
+
 .heading {
   font-family: "FoglihtenNo06";
   font-style: normal;
@@ -85,8 +89,14 @@ li {
   gap: 50px;
 }
 
-.link__img {
-  width: 42px;
+.svg_social {
+  // width: 55px;
+  // height: 55px;
+  fill: $color_saturatedPink;
+}
+
+.svg_social:hover {
+  fill: $color_pink;
 }
 
 @import "./scss/main";
