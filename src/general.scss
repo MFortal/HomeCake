@@ -96,10 +96,10 @@ li {
 .svg_social {
   fill: $color_saturatedPink;
   transform: scale(1.1);
-}
 
-.svg_social:hover {
-  fill: $color_pink;
+  &:hover {
+    fill: $color_pink;
+  }
 }
 
 @keyframes fade-in {

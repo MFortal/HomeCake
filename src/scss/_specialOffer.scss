@@ -75,6 +75,10 @@
   background-color: transparent;
 
   position: relative;
+
+  &:hover .offer__figure_hover {
+  fill: $color_buttonBack;
+}
 }
 
 .offer__figure {
@@ -84,10 +88,6 @@
 
 .offer__figure_hover {
   stroke: $color_saturatedPink;
-}
-
-.offer__button:hover .offer__figure_hover {
-  fill: $color_buttonBack;
 }
 
 .offer__block {

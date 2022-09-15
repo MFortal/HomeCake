@@ -4,15 +4,15 @@
 
 .arrow {
   fill: $color_pink;
+
+  &:hover {
+  cursor: pointer;
+  fill: $color_saturatedPink;
+}
 }
 
 .arrow_disable {
   fill: $color_buttonBack;
-}
-
-.arrow:hover {
-  cursor: pointer;
-  fill: $color_saturatedPink;
 }
 
 .arrow_next {
@@ -94,11 +94,13 @@
   opacity: 0.5;
   border-radius: 10px;
   transition: all 0.4s ease;
-}
-.bar:hover {
+
+&:hover {
   opacity: 1;
   transform: scale(1.1);
 }
+}
+
 input[name="r"] {
   position: absolute;
   visibility: hidden;

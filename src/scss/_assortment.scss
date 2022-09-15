@@ -55,6 +55,10 @@
 
   padding: 16px 24px;
   background-color: $color_buttonBack;
+
+  &:hover {
+    background-color: #f7ddd5;
+  }
 }
 
 .card__info_main {
