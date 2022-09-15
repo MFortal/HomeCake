@@ -10,7 +10,7 @@
         {'src':"./img/_taste/tiramisu.jpg" ,'heading': 'тирамису', 'description': 'Описание ОписаниеОписание ОписаниеОписание Описание', 'price':'1600 р/кг' },]
 
 section.container.block.taste#taste
-  h1.heading вкусы
+  h1.heading.taste__heading вкусы
   .taste__cards
     each item in items
       .taste__card
@@ -21,5 +21,6 @@ section.container.block.taste#taste
           .card__info_main.taste__info
             .card__info_description.card__info_22 #{item.description}
             span.card__info_price #{item.price}
+  include _buttonToggle.pug
   .taste__text Минимальный вес торта: 1,5 кг. В стоимость сходит декор из крема и велюра. Декор из ягод, шоколада, цветов и съедобной печати оплачиваются отдельно.
 

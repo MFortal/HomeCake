@@ -1,3 +1,4 @@
+// Анимация по скроллу
 const items = document.querySelectorAll('._anim-items');
 if (items.length > 0) {
   window.addEventListener('scroll', animOnScroll);
@@ -36,3 +37,16 @@ if (items.length > 0) {
   }
   animOnScroll();
 }
+
+// Кнопка "Еще"
+let buttonToggle = document.getElementsByClassName("buttonToggle");
+
+Array.from(buttonToggle).forEach(b => {
+  b.addEventListener("click", () => {
+    b.previousSibling.classList.toggle('_expand');
+    let text = b.querySelector('.buttonToggle__text');
+    let arrow = b.querySelector('.buttonToggle__arrow');
+    text.textContent == "Еще" ? text.textContent = "Свернуть" : text.textContent = "Еще";
+    arrow.classList.toggle('_rotate_90');
+  })
+});
