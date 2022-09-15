@@ -115,6 +115,7 @@ body {
   animation: fade-in 2s ease;
 }
 
+@import "./scss/mixin";
 @import "./scss/main";
 @import "./scss/about";
 @import "./scss/advantage";

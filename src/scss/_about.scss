@@ -70,12 +70,11 @@
 }
 
 .about {
-  transform: translate(-150%, 0px);
-  transition: all 2.5s ease 0s;
+  @include animationBefore(translate(-150%, 0px));
 }
 
 .about._active {
-  transform: translate(0px, 0px);
+  @include animationBefore(translate(0px, 0px));
 }
 
 .about__text_right {

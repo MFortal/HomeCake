@@ -15,6 +15,7 @@
 
 .advantage__rows {
   width: 100%;
+  overflow: hidden;
 }
 
 .row__text {
@@ -72,4 +73,16 @@
 .text__small_right {
   width: 230px;
   text-align: right;
+}
+
+.row {
+  @include animationBefore(translate(-150%, 0px));
+}
+
+.row:nth-child(2) {
+  @include animationBefore(translate(150%, 0px));
+}
+
+.row._active {
+  @include animationBefore(translate(0px, 0px));
 }
