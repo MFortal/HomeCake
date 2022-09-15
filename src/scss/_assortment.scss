@@ -88,7 +88,7 @@
   gap: 12px;
 
   &:hover {
-    color: $color_buttonBack; //$color_buttonText;
+    color: $color_buttonBack;
   }
 
   &:hover svg {
@@ -103,8 +103,6 @@
     stroke-width: 4px;
     stroke-linecap: round;
     stroke-linejoin: round;
-
-    // $color_buttonBack: #f7cdc0;
   }
 }
 
