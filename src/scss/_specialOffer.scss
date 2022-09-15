@@ -73,12 +73,12 @@
 
 .offer__button {
   background-color: transparent;
-
+  cursor: pointer;
   position: relative;
 
   &:hover .offer__figure_hover {
-  fill: $color_buttonBack;
-}
+    fill: $color_buttonBack;
+  }
 }
 
 .offer__figure {

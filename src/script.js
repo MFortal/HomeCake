@@ -50,3 +50,9 @@ Array.from(buttonToggle).forEach(b => {
     arrow.classList.toggle('_rotate_90');
   })
 });
+
+// Якорь на кнопку "Связаться со мной"
+let button = document.querySelector('.offer__button');
+button.addEventListener("click", () => {
+  location.href = '#contact';
+});
