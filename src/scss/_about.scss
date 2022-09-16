@@ -30,9 +30,9 @@
 .about__info_left,
 .about__info_right {
   font-family: "FoglihtenNo06";
-  font-size: 40px;
+  font-size: 2rem;
   width: 215px;
-  line-height: 51px;
+  line-height: 1.27;
 
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px $color_saturatedPink;
@@ -41,7 +41,7 @@
 .about__text_left,
 .about__text_right {
   width: 610px;
-  line-height: 140%;
+  line-height: 1.4;
   letter-spacing: 0.02em;
 }
 
