@@ -1,6 +1,7 @@
 .offer {
   padding-left: 0;
   padding-right: 0;
+  overflow: hidden;
 }
 
 .offer__main {
@@ -113,4 +114,12 @@
 
 .offer__figure_position {
   transform: translateY(-18%) rotate(2deg);
+}
+
+.offer__main {
+  @include animationBefore(translate(0px, 160%));
+
+  &._active {
+    @include animationBefore(translate(0px, 0px));
+  }
 }
