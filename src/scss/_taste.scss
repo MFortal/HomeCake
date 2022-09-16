@@ -48,10 +48,10 @@
 }
 
 .taste__card {
-  @include animationBefore(translate(0px, -160%));
+  @include animationBefore(translate(-160%, 0px));
 
   &:nth-child(2) {
-    @include animationBefore(translate(0px, 160%));
+    @include animationBefore(translate(160%, 0px));
   }
 
   &._active {
