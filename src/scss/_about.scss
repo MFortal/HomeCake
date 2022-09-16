@@ -13,6 +13,13 @@
   position: relative;
   width: 100%;
   height: 815px;
+
+  overflow: hidden;
+  @include animationBefore(translate(-150%, 0px));
+
+  &._active {
+    @include animationBefore(translate(0px, 0px));
+  }
 }
 
 .about__img {
@@ -67,14 +74,6 @@
 .about__text_right._active,
 .about__info_right._active {
   opacity: 1;
-}
-
-.about {
-  @include animationBefore(translate(-150%, 0px));
-}
-
-.about._active {
-  @include animationBefore(translate(0px, 0px));
 }
 
 .about__text_right {
