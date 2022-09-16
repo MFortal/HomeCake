@@ -80,3 +80,15 @@
     margin-bottom: 50px;
   }
 }
+
+.card {
+  @include animationBefore(translate(-160%, 0px));
+}
+
+.card:nth-child(2) {
+  @include animationBefore(translate(160%, 0px));
+}
+
+.card._active {
+  @include animationBefore(translate(0px, 0px));
+}
