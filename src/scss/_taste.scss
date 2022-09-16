@@ -46,3 +46,15 @@
   font-size: 20px;
   text-align: left;
 }
+
+.taste__card {
+  @include animationBefore(translate(0px, -160%));
+
+  &:nth-child(2) {
+    @include animationBefore(translate(0px, 160%));
+  }
+
+  &._active {
+    @include animationBefore(translate(0px, 0px));
+  }
+}
