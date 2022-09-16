@@ -54,6 +54,18 @@
     transform: scale(0.85);
   }
 
+  @keyframes jump_animate {
+    0% {
+      transform: rotate(4deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+    100% {
+      transform: rotate(4deg);
+    }
+  }
+
   &__img_border {
     box-sizing: border-box;
 
@@ -64,7 +76,11 @@
 
     border: 1px solid $color_saturatedPink;
     border-radius: 0px 200px 0px 0px;
-    transform: rotate(4deg);
+
+    animation-name: jump_animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   &__info {
