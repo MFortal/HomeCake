@@ -16,8 +16,9 @@
 
 .main__info {
   position: absolute;
-  left: 100px;
-  top: 153px;
+  left: $indent;
+  top: 53%;
+  transform: translateY(-53%);
 
   display: flex;
   flex-direction: column;
@@ -51,8 +52,9 @@
 
 .main__foto2 {
   height: 100%;
-  width: 435px;
+  width: 37.9%;
   background-image: url("./img/_main/main2.jpg");
+  background-size: cover;
 
   position: absolute;
   top: 0;
@@ -60,14 +62,16 @@
 }
 
 .main__foto1 {
-  width: 350px;
-  height: 400px;
-  border-radius: 175px 175px 0px 0px;
+  width: 30.5%;
+  min-height: 400px;
+  transition: all 0.5s ease;
+  border-radius: 50% 50% 0px 0px;
   background-image: url("./img/_main/main1.jpg");
+  background-size: cover;
 
   position: absolute;
   right: 287px;
-  top: 335px;
+  bottom: 0;
 
   z-index: 1;
 }
@@ -107,7 +111,7 @@
 }
 
 .main__text {
-  width: 515px;
+  width: 62%;
 }
 
 .ellipses {
@@ -127,6 +131,7 @@
 }
 
 .main__buttonText {
+  width: 100%;
   font-size: 1.2rem;
   color: $color_saturatedPink;
 

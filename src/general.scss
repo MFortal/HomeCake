@@ -7,17 +7,19 @@ $color_saturatedPink: #df3c66;
 $color_buttonBack: #f7cdc0;
 $color_buttonText: #8b2a64;
 
+$indent: 7.5%;
+
 html {
   scroll-behavior: smooth;
   font-size: 20px;
 }
 
-header,
+.header,
 .container {
   border-bottom: 1px solid $color_line;
 }
 
-header {
+.header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -44,10 +46,10 @@ body {
   color: $color_text;
 }
 
-header {
+.header {
   box-sizing: border-box;
 
-  padding: 20px 100px;
+  padding: 1.5% $indent;
   background: $color_header;
 }
 
@@ -82,8 +84,8 @@ li {
 }
 
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: $indent;
+  padding-right: $indent;
 }
 
 .block {
@@ -133,4 +135,34 @@ body {
 
 ._expand {
   height: 100%;
+}
+
+@media (min-width: 1399px) {
+  .main__foto1 {
+    min-height: 450px;
+  }
+}
+
+@media (min-width: 1599px) {
+  html {
+    font-size: 22px;
+  }
+
+  .main__foto1 {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1919px) {
+  html {
+    font-size: 24px;
+  }
+
+  .main__info {
+    gap: 40px;
+  }
+
+  .about__img {
+    transform: scale(1.1);
+  }
 }

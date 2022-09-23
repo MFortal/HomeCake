@@ -118,3 +118,14 @@ const checkBtns = () => {
 }
 
 checkBtns();
+window.onresize = checkBtns;
+
+// Установка отступа для главной страницы
+const main = document.querySelector('.main');
+const header = document.querySelector('.header');
+
+const setPaddingMain = () => {
+  main.style.paddingTop = header.offsetHeight + 'px';
+}
+setPaddingMain();
+window.onresize = setPaddingMain;

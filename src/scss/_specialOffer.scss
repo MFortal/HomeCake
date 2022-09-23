@@ -15,7 +15,7 @@
 }
 
 .offer__content {
-  width: calc(50% - 100px);
+  width: calc(50% - $indent);
 }
 
 .offer__foto {
@@ -57,11 +57,11 @@
 }
 
 .offer_margin-right {
-  margin-right: 100px;
+  margin-right: $indent;
 }
 
 .offer_margin-left {
-  margin-left: 100px;
+  margin-left: $indent;
 }
 
 .offer__buttonText {
