@@ -51,11 +51,18 @@ Array.from(buttonToggle).forEach(b => {
   })
 });
 
+// Функция якоря на кнопку
+function addHref(bClass, bHref) {
+  let button = document.querySelector(bClass);
+  button.addEventListener("click", () => {
+    location.href = bHref;
+  });
+}
+
 // Якорь на кнопку "Связаться со мной"
-let button = document.querySelector('.offer__button');
-button.addEventListener("click", () => {
-  location.href = '#contact';
-});
+addHref('.offer__button', '#contact');
+// Якорь на кнопку "Посмотреть работы"
+addHref('.main__button', '#assortment');
 
 // Карусель для отзывов
 let position = 0;
