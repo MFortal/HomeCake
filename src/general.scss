@@ -92,8 +92,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 6%;
+  padding-bottom: 4%;
   gap: 50px;
 
   overflow: hidden;
@@ -133,13 +133,17 @@ body {
 @import "./scss/footer";
 @import "./scss/buttonToggle";
 
-._expand {
-  height: 100%;
+._display {
+  display: none;
 }
 
 @media (min-width: 1399px) {
   .main__foto1 {
     min-height: 450px;
+  }
+
+  .buttonToggle {
+    padding: 35px 55px;
   }
 }
 
@@ -150,6 +154,10 @@ body {
 
   .main__foto1 {
     min-height: 500px;
+  }
+
+  .row {
+    min-height: 350px;
   }
 }
 
@@ -164,5 +172,8 @@ body {
 
   .about__img {
     transform: scale(1.1);
+  }
+  .buttonToggle {
+    padding: 45px 65px;
   }
 }

@@ -1,5 +1,6 @@
 .row {
-  height: 250px;
+  height: 30vh;
+  min-height: 250px;
   border-bottom: 1px solid #f19aff;
 
   display: flex;
@@ -63,6 +64,8 @@
 }
 
 .row__block_img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -85,4 +88,12 @@
 
 .row._active {
   @include animationBefore(translate(0px, 0px));
+}
+
+.row__block_img-last {
+  width: 150%;
+  object-position: -83px 40%;
+}
+.row__block_img-first {
+  object-position: 0 20%;
 }

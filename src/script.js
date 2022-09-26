@@ -43,7 +43,9 @@ let buttonToggle = document.getElementsByClassName("buttonToggle");
 
 Array.from(buttonToggle).forEach(b => {
   b.addEventListener("click", () => {
-    b.previousSibling.classList.toggle('_expand');
+    for (let i = 2; i < b.previousSibling.childNodes.length; i++) {
+      b.previousSibling.childNodes[i].classList.toggle('_display');
+    }
     let text = b.querySelector('.buttonToggle__text');
     let arrow = b.querySelector('.buttonToggle__arrow');
     text.textContent == "Еще" ? text.textContent = "Свернуть" : text.textContent = "Еще";
@@ -118,7 +120,6 @@ const checkBtns = () => {
 }
 
 checkBtns();
-window.onresize = checkBtns;
 
 // Установка отступа для главной страницы
 const main = document.querySelector('.main');
@@ -128,4 +129,5 @@ const setPaddingMain = () => {
   main.style.paddingTop = header.offsetHeight + 'px';
 }
 setPaddingMain();
+
 window.onresize = setPaddingMain;

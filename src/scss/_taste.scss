@@ -56,8 +56,8 @@
   &:nth-child(2n) {
     @include animationBefore(translate(160%, 0px));
   }
+}
 
-  &._active {
-    @include animationBefore(translate(0px, 0px));
-  }
+._active {
+  @include animationBefore(translate(0px, 0px));
 }

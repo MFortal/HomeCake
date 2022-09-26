@@ -3,30 +3,32 @@
 
   display: flex;
   flex-direction: column;
-  gap: 50px;
-
-  height: 850px;
   overflow: hidden;
 }
 
 .card {
-  padding: 0px 70px 50px;
+  padding: 4% 6%;
   border-bottom: 1px solid $color_line;
 
   &:last-child {
     border-bottom: none;
+    padding-bottom: 0;
+  }
+  &:first-child {
+    padding-top: 0;
   }
 }
 
 .card__content {
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 .card__img {
   width: 45%;
-  height: 350px;
+  height: 35vh;
+  max-height: 470px;
+  min-height: 350px;
   overflow: hidden;
 }
 
@@ -42,6 +44,12 @@
 
 .img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img:first-child {
+  object-position: 0 36%;
 }
 
 .card__info_title {
@@ -80,6 +88,10 @@
   &__heading {
     margin-bottom: 50px;
   }
+}
+
+.btn-expand {
+  padding: 20px 0;
 }
 
 .card {
