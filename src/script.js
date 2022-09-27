@@ -43,12 +43,19 @@ let buttonToggle = document.getElementsByClassName("buttonToggle");
 
 Array.from(buttonToggle).forEach(b => {
   b.addEventListener("click", () => {
-    for (let i = 2; i < b.previousSibling.childNodes.length; i++) {
+    let count;
+    b.previousSibling.classList.contains('taste__cards') ? count = 4 : count = 2;
+    for (let i = count; i < b.previousSibling.childNodes.length; i++) {
       b.previousSibling.childNodes[i].classList.toggle('_display');
     }
     let text = b.querySelector('.buttonToggle__text');
     let arrow = b.querySelector('.buttonToggle__arrow');
-    text.textContent == "Еще" ? text.textContent = "Свернуть" : text.textContent = "Еще";
+    if (text.textContent != "Еще") {
+      text.textContent = "Еще";
+      b.scrollIntoView(false);
+    } else {
+      text.textContent = "Свернуть";
+    }
     arrow.classList.toggle('_rotate_90');
   })
 });
