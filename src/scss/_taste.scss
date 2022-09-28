@@ -15,11 +15,8 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 50px;
-    column-gap: 60px;
-    justify-content: center;
-    height: 1030px;
+    justify-content: space-around;
     overflow: hidden;
-    margin-bottom: 10px;
   }
 
   &__card {
@@ -34,13 +31,12 @@
 
 .card__img_330 {
   width: 100%;
-  height: 330px;
 }
 
 .card__info_100 {
   width: 100%;
   row-gap: 10px;
-  padding-top: 20px;
+  padding-top: 4%;
 }
 
 .card__info_22 {
@@ -58,6 +54,6 @@
   }
 }
 
-._active {
+.taste__card._active {
   @include animationBefore(translate(0px, 0px));
 }

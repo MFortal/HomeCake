@@ -137,6 +137,12 @@ body {
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .taste__card {
+    width: 46%;
+  }
+}
+
 @media (min-width: 1399px) {
   .main__foto1 {
     min-height: 450px;

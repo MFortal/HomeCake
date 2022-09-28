@@ -1,19 +1,19 @@
 -
     items = [
-        {'src':"./img/_taste/pistachio-raspberry.jpg" ,'heading': 'фисташка-малина', 'description': 'Классический бисквит, ванильный и шоколадно-фисташковый крем, малиновый конфи', 'price': '1700 р/кг'},
-        {'src':"./img/_taste/medovik.jpg" ,'heading': 'медовик', 'description': 'Медовые коржи и нежный крем пломбир','price': '1550 р/кг'},
-        {'src':"./img/_taste/raffaello.jpg" ,'heading': 'Рафаэлло','description': 'ОписаниеОписание ОписаниеОписание ОписаниеОписание',  'price': '1770 р/кг'},
-        {'src':"./img/_taste/snikers.jpg" ,'heading': 'сникерс', 'description': 'Шоколадный бисквит, шоколадный крем, нуга, арахис и соленая карамель ', 'price': '1550 р/кг'},
-        {'src':"./img/_taste/exotic.jpg" ,'heading': 'экзотик', 'description': 'Классический бисквит, ванильный крем-чиз, конфи маракуйя, компоте манго (пюре + кусочки)', 'price':'1700 р/кг' },
-        {'src':"./img/_taste/plug.jpg" ,'heading': 'Шоколад-вишня', 'description': 'Описание ОписаниеОписание ОписаниеОписание Описание', 'price':'1550 р/кг' },
-        {'src':"./img/_taste/napoleon.jpg" ,'heading': 'наполеон', 'description': 'Коржи из слоеного теста, заварной ванильный крем','price':'1700 р/кг' },
-        {'src':"./img/_taste/tiramisu.jpg" ,'heading': 'тирамису', 'description': 'Описание ОписаниеОписание ОписаниеОписание Описание', 'price':'1600 р/кг' },]
+        {'src':"./img/_taste/pistachio-raspberry.jpg" , 'class':'_anim-items _anim-no-hide', 'heading': 'фисташка-малина', 'description': 'Классический бисквит, ванильный и шоколадно-фисташковый крем, малиновый конфи', 'price': '1700 р/кг'},
+        {'src':"./img/_taste/medovik.jpg" , 'class':'_anim-items _anim-no-hide', 'heading': 'медовик', 'description': 'Медовые коржи и нежный крем пломбир','price': '1550 р/кг'},
+        {'src':"./img/_taste/raffaello.jpg" , 'class':'_anim-items _anim-no-hide', 'heading': 'Рафаэлло','description': 'ОписаниеОписание ОписаниеОписание ОписаниеОписание',  'price': '1770 р/кг'},
+        {'src':"./img/_taste/snikers.jpg" , 'class':'_anim-items _anim-no-hide', 'heading': 'сникерс', 'description': 'Шоколадный бисквит, шоколадный крем, нуга, арахис и соленая карамель ', 'price': '1550 р/кг'},
+        {'src':"./img/_taste/exotic.jpg" , 'class':'_active _display', 'heading': 'экзотик', 'description': 'Классический бисквит, ванильный крем-чиз, конфи маракуйя, компоте манго (пюре + кусочки)', 'price':'1700 р/кг' },
+        {'src':"./img/_taste/plug.jpg" , 'class':'_active _display', 'heading': 'Шоколад-вишня', 'description': 'Описание ОписаниеОписание ОписаниеОписание Описание', 'price':'1550 р/кг' },
+        {'src':"./img/_taste/napoleon.jpg" , 'class':'_active _display', 'heading': 'наполеон', 'description': 'Коржи из слоеного теста, заварной ванильный крем','price':'1700 р/кг' },
+        {'src':"./img/_taste/tiramisu.jpg" , 'class':'_active _display', 'heading': 'тирамису', 'description': 'Описание ОписаниеОписание ОписаниеОписание Описание', 'price':'1600 р/кг' },]
 
 section.container.block.taste#taste
   h1.heading.taste__heading вкусы
   .taste__cards
     each item in items
-      .taste__card._anim-items._anim-no-hide
+      div(class='taste__card '+item.class)
         .card__img.card__img_330
           img.img(src=item.src)
         .card__info.card__info_100
