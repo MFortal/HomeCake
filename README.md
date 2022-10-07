@@ -7,7 +7,7 @@
 ![Pug](https://img.shields.io/badge/Pug-FFF?style=for-the-badge&logo=pug&logoColor=A86454)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-## Текущее состояние можно глянуть по ссылке
+## Текущее состояние ~~можно~~ пока нельзя :) глянуть по ссылке
 https://mfortal.github.io/HomeCake/
 
 ## Макет
