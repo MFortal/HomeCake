@@ -1,6 +1,6 @@
 # HomeCake
-Адаптивный сайт-визитка для кондитера, написанный с поомщью препроцессора SCSS, шаблонизатора Pug и сборщика Parcel. 
-Работа в разработке...
+Адаптивный сайт-визитка для кондитера, написанный с помощью препроцессора SCSS, шаблонизатора Pug и сборщика Parcel. 
+Сайт в разработке...
 
 ## Стек
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
