@@ -1,3 +1,6 @@
+import "./scss/normalize.css";
+import "./main.scss";
+
 import { addHref } from "./js/addHref.js";
 import { checkBtns } from "./js/setSlider.js";
 import { addToggleEvent } from "./js/addToggleEvent.js";

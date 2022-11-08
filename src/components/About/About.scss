@@ -4,92 +4,69 @@
   align-items: center;
   gap: 50px;
 }
-
 .about {
   overflow: hidden;
-}
 
-.about__main {
-  position: relative;
-  width: 100%;
-  height: 815px;
-
-  overflow: hidden;
-  //@include animationBefore(translate(-150%, 0px));
-
-  &._active {
-    //@include animationBefore(translate(0px, 0px));
+  &__main {
+    position: relative;
+    width: 100%;
+    height: 815px;
+    overflow: hidden;
   }
-}
 
-.about__img {
-  display: block;
-  margin: 3% auto 0; //50px
-}
+  &__img {
+    display: block;
+    margin: 3% auto 0;
+  }
 
-.about__info_left,
-.about__info_right {
-  font-family: "FoglihtenNo06";
-  font-size: 2rem;
-  width: 18%;
-  line-height: 1.27;
+  &__info_left,
+  &__info_right {
+    font-family: "FoglihtenNo06";
+    font-size: 2rem;
+    width: 18%;
+    line-height: 1.27;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px $color_saturatedPink;
+  }
 
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px $color_saturatedPink;
-}
+  &__text_left,
+  &__text_right {
+    width: 50%;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
 
-.about__text_left,
-.about__text_right {
-  width: 50%;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
-}
+  &__info_left,
+  &__text_left {
+    text-align: left;
+  }
 
-.about__info_left,
-.about__text_left {
-  text-align: left;
-}
+  &__info_right,
+  &__text_right {
+    text-align: right;
+  }
 
-.about__info_right,
-.about__text_right {
-  text-align: right;
-}
+  &__text_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-.about__text_left {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  &__text_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-// .about__text_left,
-// .about__info_left,
-// .about__text_right,
-// .about__info_right {
-//   opacity: 0;
-//   transition: all 1s ease 1s;
-// }
+  &__info_right {
+    position: absolute;
+    top: 18.5%;
+    right: 19.4%;
+  }
 
-// .about__text_left._active,
-// .about__info_left._active,
-// .about__text_right._active,
-// .about__info_right._active {
-//   opacity: 1;
-// }
-
-.about__text_right {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.about__info_right {
-  position: absolute;
-  top: 18.5%; //212px;
-  right: 19.4%;
-}
-
-.about__info_left {
-  position: absolute;
-  left: 14.2%;
-  bottom: 21.5%;
+  &__info_left {
+    position: absolute;
+    left: 14.2%;
+    bottom: 21.5%;
+  }
 }

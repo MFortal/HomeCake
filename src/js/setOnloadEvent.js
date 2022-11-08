@@ -3,7 +3,7 @@ import { addAnimate } from "./addAnimate.js";
 // Установка отступа для главной страницы
 
 const main = document.querySelector("#main");
-const header = document.querySelector(".header");
+const header = document.querySelector("#header");
 
 let setPaddingMain = () => {
   main.style.paddingTop = header.offsetHeight - 1 + "px";

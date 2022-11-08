@@ -2,123 +2,112 @@
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
-}
 
-.offer__main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.offer__foto {
-  width: 50%;
-}
-
-.offer__foto {
-  border-radius: 50% 0px;
-  overflow: hidden;
-}
-
-.offer__img {
-  height: 100%;
-}
-
-.offer__title {
-  font-family: "FoglihtenNo06";
-  font-size: 2.1rem;
-  line-height: 1.26;
-  letter-spacing: 0.05em;
-}
-
-.offer__desc {
-  font-size: 1.5rem;
-  line-height: 1.23;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
-.offer__info {
-  font-size: 1.3rem;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
-.offer__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  width: calc(50% - $indent);
-  padding: 55px 30px;
-  box-sizing: border-box;
-}
-
-.offer_margin-right {
-  margin-right: $indent;
-}
-
-.offer_margin-left {
-  margin-left: $indent;
-}
-
-.offer__buttonText {
-  font-family: "FoglihtenNo06";
-  font-size: 1.1rem;
-  line-height: 2.27;
-  letter-spacing: 0.05em;
-  color: $color_saturatedPink;
-}
-
-.offer__button {
-  background-color: transparent;
-  cursor: pointer;
-  position: relative;
-
-  &:hover .offer__figure_hover {
-    fill: $color_buttonBack;
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
-}
 
-.offer__figure {
-  fill: transparent;
-  stroke: $color_buttonText;
-}
+  &__foto {
+    width: 50%;
+    border-radius: 50% 0px;
+    overflow: hidden;
+  }
 
-.offer__figure_hover {
-  stroke: $color_saturatedPink;
-}
+  &__img {
+    height: 100%;
+  }
 
-.offer__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 0px;
-  gap: 35px;
-}
+  &__title {
+    font-family: "FoglihtenNo06";
+    font-size: 2.1rem;
+    line-height: 1.26;
+    letter-spacing: 0.05em;
+  }
 
-.offer__buttonText {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-52%) translateY(-73%);
-  top: 50%;
-}
+  &__desc {
+    font-size: 1.5rem;
+    line-height: 1.23;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 
-.offer__svg {
-  width: 90%;
-  height: 140px;
-}
+  &__info {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
 
-.offer__figure_position {
-  transform: translateY(-18%) rotate(2deg);
-}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-.offer__main {
-  //@include animationBefore(translate(0px, 160%));
+    width: calc(50% - $indent);
+    padding: 55px 30px;
+    box-sizing: border-box;
+  }
 
-  &._active {
-    //@include animationBefore(translate(0px, 0px));
+  &_margin-right {
+    margin-right: $indent;
+  }
+
+  &_margin-left {
+    margin-left: $indent;
+  }
+
+  &__buttonText {
+    font-family: "FoglihtenNo06";
+    font-size: 1.1rem;
+    line-height: 2.27;
+    letter-spacing: 0.05em;
+    color: $color_saturatedPink;
+  }
+
+  &__button {
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+
+    &:hover .offer__figure_hover {
+      fill: $color_buttonBack;
+    }
+  }
+
+  &__figure {
+    fill: transparent;
+    stroke: $color_buttonText;
+
+    &_hover {
+      stroke: $color_saturatedPink;
+    }
+
+    &_position {
+      transform: translateY(-18%) rotate(2deg);
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0px;
+    gap: 35px;
+  }
+
+  &__buttonText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-52%) translateY(-73%);
+    top: 50%;
+  }
+
+  &__svg {
+    width: 90%;
+    height: 140px;
   }
 }

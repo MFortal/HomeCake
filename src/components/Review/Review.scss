@@ -22,17 +22,6 @@
   margin-top: -22px;
   overflow: hidden;
 
-  //@include animationBefore(translate(160%, 0px));
-
-  &._active {
-    //@include animationBefore(translate(0px, 0px));
-  }
-
-  &__info_name {
-    color: $color_saturatedPink;
-    font-weight: 800;
-  }
-
   &__nav {
     display: flex;
     justify-content: center;
@@ -52,35 +41,28 @@
   &__img {
     position: relative;
     transform: scale(0.85);
-  }
 
-  // @keyframes jump_animate {
-  //   0% {
-  //     transform: rotate(4deg);
-  //   }
-  //   50% {
-  //     transform: rotate(-4deg);
-  //   }
-  //   100% {
-  //     transform: rotate(4deg);
-  //   }
-  // }
+    &_name {
+      color: $color_saturatedPink;
+      font-weight: 800;
+    }
 
-  &__img_border {
-    box-sizing: border-box;
+    &_border {
+      box-sizing: border-box;
 
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 0px;
+      position: absolute;
+      width: 300px;
+      height: 400px;
+      top: 0px;
 
-    border: 1px solid $color_saturatedPink;
-    border-radius: 0px 200px 0px 0px;
+      border: 1px solid $color_saturatedPink;
+      border-radius: 0px 200px 0px 0px;
 
-    // animation-name: jump_animate;
-    // animation-duration: 2s;
-    // animation-iteration-count: infinite;
-    // animation-timing-function: linear;
+      animation-name: jump_animate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
   }
 
   &__info {
@@ -91,14 +73,14 @@
     gap: 30px;
 
     width: 60%;
-  }
 
-  &__info_main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 15px;
+    &_main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 15px;
+    }
   }
 }
 
@@ -112,4 +94,16 @@
   width: 300%;
 
   transition: 1s;
+}
+
+@keyframes jump_animate {
+  0% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
 }

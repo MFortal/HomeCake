@@ -9,7 +9,7 @@ html(lang="ru")
         link(rel="apple-touch-icon", href="img/icon/apple-touch-icon.png")
         title Кондитерская Анны Солдатенко
     body
-        header.header
+        header.header#header
           nav.menu
             ul.menu__ul
               include components/Menu/Menu.pug
@@ -22,8 +22,8 @@ html(lang="ru")
           include components/Offer/Offer.pug
           include components/Review/Review.pug
           include components/Contact/Contact.pug
+        footer  
           include components/Footer/Footer.pug
         .preloader-container
           .preloader
-        script(src='./main.js')
         script(src='./script.js')

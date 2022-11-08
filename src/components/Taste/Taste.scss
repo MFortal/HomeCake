@@ -32,31 +32,19 @@
   }
 }
 
-.card__img_330 {
-  width: 100%;
-}
-
-.card__info_100 {
-  width: 100%;
-  row-gap: 10px;
-  padding-top: 4%;
-}
-
-.card__info_22 {
-  font-size: 1rem;
-  text-align: left;
-}
-
-.taste__card {
-  &:nth-child(2n + 1) {
-    //@include animationBefore(translate(-160%, 0px));
+.card {
+  &__img_330 {
+    width: 100%;
   }
 
-  &:nth-child(2n) {
-    //@include animationBefore(translate(160%, 0px));
+  &__info_100 {
+    width: 100%;
+    row-gap: 10px;
+    padding-top: 4%;
   }
-}
 
-.taste__card._active {
-  //@include animationBefore(translate(0px, 0px));
+  &__info_22 {
+    font-size: 1rem;
+    text-align: left;
+  }
 }
