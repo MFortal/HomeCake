@@ -46,14 +46,14 @@
 
 .taste__card {
   &:nth-child(2n + 1) {
-    @include animationBefore(translate(-160%, 0px));
+    //@include animationBefore(translate(-160%, 0px));
   }
 
   &:nth-child(2n) {
-    @include animationBefore(translate(160%, 0px));
+    //@include animationBefore(translate(160%, 0px));
   }
 }
 
 .taste__card._active {
-  @include animationBefore(translate(0px, 0px));
+  //@include animationBefore(translate(0px, 0px));
 }

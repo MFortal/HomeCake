@@ -22,7 +22,9 @@ html {
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
 }
 
@@ -33,6 +35,7 @@ ul {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 body {
@@ -108,18 +111,18 @@ li {
   }
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes fade-in {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
-body {
-  animation: fade-in 2s ease;
-}
+// body {
+//   animation: fade-in 2s ease;
+// }
 
 @import "./scss/mixin";
 @import "./scss/main";
@@ -136,6 +139,16 @@ body {
 ._display {
   display: none;
 }
+
+// @media (max-height: 1280px) {
+//   html {
+//     font-size: 16px;
+//   }
+
+//   .offer__content {
+//     gap: 9px;
+//   }
+// }
 
 @media (max-width: 1024px) {
   .taste__card {

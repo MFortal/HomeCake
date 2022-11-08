@@ -14,10 +14,6 @@
   width: 50%;
 }
 
-.offer__content {
-  width: calc(50% - $indent);
-}
-
 .offer__foto {
   border-radius: 50% 0px;
   overflow: hidden;
@@ -43,7 +39,7 @@
 
 .offer__info {
   font-size: 1.3rem;
-  line-height: 1.18;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.05em;
 }
@@ -53,7 +49,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 55px 0px;
+
+  width: calc(50% - $indent);
+  padding: 55px 30px;
+  box-sizing: border-box;
 }
 
 .offer_margin-right {
@@ -117,9 +116,9 @@
 }
 
 .offer__main {
-  @include animationBefore(translate(0px, 160%));
+  //@include animationBefore(translate(0px, 160%));
 
   &._active {
-    @include animationBefore(translate(0px, 0px));
+    //@include animationBefore(translate(0px, 0px));
   }
 }

@@ -27,24 +27,24 @@
   }
 }
 
-@keyframes scale_animate {
-  0% {
-    transform: translateY(-20%);
-  }
-  50% {
-    transform: translateY(20%);
-  }
-  100% {
-    transform: translateY(-20%);
-  }
-}
+// @keyframes scale_animate {
+//   0% {
+//     transform: translateY(-20%);
+//   }
+//   50% {
+//     transform: translateY(20%);
+//   }
+//   100% {
+//     transform: translateY(-20%);
+//   }
+// }
 
-.buttonToggle__arrow {
-  animation-name: scale_animate;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+// .buttonToggle__arrow {
+//   animation-name: scale_animate;
+//   animation-duration: 4s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+// }
 
 ._rotate_90 {
   transform: rotate(-180deg);

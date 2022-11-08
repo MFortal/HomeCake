@@ -1,7 +1,5 @@
 .main {
   height: 735px;
-  padding-top: 69px;
-
   position: relative;
 }
 
@@ -27,20 +25,20 @@
   z-index: 2;
 }
 
-@keyframes main-in {
-  0% {
-    opacity: 0;
-    transform: translate(0px, 100%);
-  }
-  100% {
-    transform: translate(0, -50%);
-    opacity: 1;
-  }
-}
+// @keyframes main-in {
+//   0% {
+//     opacity: 0;
+//     transform: translate(0px, 100%);
+//   }
+//   100% {
+//     transform: translate(0, -50%);
+//     opacity: 1;
+//   }
+// }
 
 .main__info {
   transition: all 1.5s ease 0s;
-  animation: main-in 2s ease;
+  //animation: main-in 2s ease;
 }
 
 .main__fotos {

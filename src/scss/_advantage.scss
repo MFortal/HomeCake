@@ -79,15 +79,15 @@
 }
 
 .row {
-  @include animationBefore(translate(-150%, 0px));
+  //@include animationBefore(translate(-150%, 0px));
 }
 
 .row:nth-child(2) {
-  @include animationBefore(translate(150%, 0px));
+  //@include animationBefore(translate(150%, 0px));
 }
 
 .row._active {
-  @include animationBefore(translate(0px, 0px));
+  //@include animationBefore(translate(0px, 0px));
 }
 
 .row__block_img-last {

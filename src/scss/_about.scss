@@ -15,10 +15,10 @@
   height: 815px;
 
   overflow: hidden;
-  @include animationBefore(translate(-150%, 0px));
+  //@include animationBefore(translate(-150%, 0px));
 
   &._active {
-    @include animationBefore(translate(0px, 0px));
+    //@include animationBefore(translate(0px, 0px));
   }
 }
 
@@ -61,20 +61,20 @@
   left: 0;
 }
 
-.about__text_left,
-.about__info_left,
-.about__text_right,
-.about__info_right {
-  opacity: 0;
-  transition: all 1s ease 1s;
-}
+// .about__text_left,
+// .about__info_left,
+// .about__text_right,
+// .about__info_right {
+//   opacity: 0;
+//   transition: all 1s ease 1s;
+// }
 
-.about__text_left._active,
-.about__info_left._active,
-.about__text_right._active,
-.about__info_right._active {
-  opacity: 1;
-}
+// .about__text_left._active,
+// .about__info_left._active,
+// .about__text_right._active,
+// .about__info_right._active {
+//   opacity: 1;
+// }
 
 .about__text_right {
   position: absolute;

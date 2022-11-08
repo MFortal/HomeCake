@@ -22,10 +22,10 @@
   margin-top: -22px;
   overflow: hidden;
 
-  @include animationBefore(translate(160%, 0px));
+  //@include animationBefore(translate(160%, 0px));
 
   &._active {
-    @include animationBefore(translate(0px, 0px));
+    //@include animationBefore(translate(0px, 0px));
   }
 
   &__info_name {
@@ -54,17 +54,17 @@
     transform: scale(0.85);
   }
 
-  @keyframes jump_animate {
-    0% {
-      transform: rotate(4deg);
-    }
-    50% {
-      transform: rotate(-4deg);
-    }
-    100% {
-      transform: rotate(4deg);
-    }
-  }
+  // @keyframes jump_animate {
+  //   0% {
+  //     transform: rotate(4deg);
+  //   }
+  //   50% {
+  //     transform: rotate(-4deg);
+  //   }
+  //   100% {
+  //     transform: rotate(4deg);
+  //   }
+  // }
 
   &__img_border {
     box-sizing: border-box;
@@ -77,10 +77,10 @@
     border: 1px solid $color_saturatedPink;
     border-radius: 0px 200px 0px 0px;
 
-    animation-name: jump_animate;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    // animation-name: jump_animate;
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
   }
 
   &__info {

@@ -8,10 +8,10 @@
 
   overflow: hidden;
 
-  @include animationBefore(translate(0px, -160%));
+  //@include animationBefore(translate(0px, -160%));
 
   &._active {
-    @include animationBefore(translate(0px, 0px));
+    //@include animationBefore(translate(0px, 0px));
   }
 }
 

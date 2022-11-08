@@ -48,7 +48,7 @@
   height: 100%;
 }
 
-.img:first-child {
+.img_position36 {
   object-position: 0 36%;
 }
 
@@ -95,13 +95,13 @@
 }
 
 .card {
-  @include animationBefore(translate(-160%, 0px));
+  //@include animationBefore(translate(-160%, 0px));
 }
 
 .card:nth-child(2) {
-  @include animationBefore(translate(160%, 0px));
+  //@include animationBefore(translate(160%, 0px));
 }
 
 .card._active {
-  @include animationBefore(translate(0px, 0px));
+  //@include animationBefore(translate(0px, 0px));
 }
