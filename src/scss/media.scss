@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+  .taste__card {
+    width: 46%;
+  }
+}
+
+@media (min-width: 1399px) {
+  .main__foto1 {
+    min-height: 450px;
+  }
+
+  .buttonToggle {
+    padding: 35px 55px;
+  }
+}
+
+@media (min-width: 1599px) {
+  html {
+    font-size: 22px;
+  }
+
+  .main__foto1 {
+    min-height: 500px;
+  }
+
+  .row {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 1919px) {
+  html {
+    font-size: 24px;
+  }
+
+  .main__info {
+    gap: 40px;
+  }
+
+  .about__img {
+    transform: scale(1.1);
+  }
+  .buttonToggle {
+    padding: 45px 65px;
+  }
+}

@@ -1,14 +1,3 @@
-$color_back: white;
-$color_text: #37353a;
-$color_header: rgba(255, 255, 255, 0.8);
-$color_line: #f19aff;
-$color_pink: #d47890;
-$color_saturatedPink: #df3c66;
-$color_buttonBack: #f7cdc0;
-$color_buttonText: #8b2a64;
-
-$indent: 7.5%;
-
 html {
   scroll-behavior: smooth;
   font-size: 20px;
@@ -185,75 +174,6 @@ li {
 //   animation: fade-in 2s ease;
 // }
 
-@import "./scss/mixin";
-@import "./scss/main";
-@import "./scss/about";
-@import "./scss/advantage";
-@import "./scss/assortment";
-@import "./scss/taste";
-@import "./scss/review";
-@import "./scss/specialOffer";
-@import "./scss/contact";
-@import "./scss/footer";
-@import "./scss/buttonToggle";
-
 ._display {
   display: none;
-}
-
-// @media (max-height: 1280px) {
-//   html {
-//     font-size: 16px;
-//   }
-
-//   .offer__content {
-//     gap: 9px;
-//   }
-// }
-
-@media (max-width: 1024px) {
-  .taste__card {
-    width: 46%;
-  }
-}
-
-@media (min-width: 1399px) {
-  .main__foto1 {
-    min-height: 450px;
-  }
-
-  .buttonToggle {
-    padding: 35px 55px;
-  }
-}
-
-@media (min-width: 1599px) {
-  html {
-    font-size: 22px;
-  }
-
-  .main__foto1 {
-    min-height: 500px;
-  }
-
-  .row {
-    min-height: 350px;
-  }
-}
-
-@media (min-width: 1919px) {
-  html {
-    font-size: 24px;
-  }
-
-  .main__info {
-    gap: 40px;
-  }
-
-  .about__img {
-    transform: scale(1.1);
-  }
-  .buttonToggle {
-    padding: 45px 65px;
-  }
 }

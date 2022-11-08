@@ -12,17 +12,17 @@ html(lang="ru")
         header.header
           nav.menu
             ul.menu__ul
-              include pug/_menu.pug
+              include components/Menu/Menu.pug
         main#main
-          include pug/_main.pug
-          include pug/_about.pug
-          include pug/_advantage.pug
-          include pug/_assortment.pug
-          include pug/_taste.pug
-          include pug/_specialOffer.pug
-          include pug/_review.pug
-          include pug/_contact.pug
-          include pug/_footer.pug
+          include components/Main/Main.pug
+          include components/About/About.pug
+          include components/Advantage/Advantage.pug
+          include components/Assortment/Assortment.pug
+          include components/Taste/Taste.pug
+          include components/Offer/Offer.pug
+          include components/Review/Review.pug
+          include components/Contact/Contact.pug
+          include components/Footer/Footer.pug
         .preloader-container
           .preloader
         script(src='./main.js')
