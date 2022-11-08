@@ -14,9 +14,9 @@ section.container.block.taste#taste
   .taste__cards
     each item in items
       div(class='taste__card '+item.class)
-        .card__img.card__img_330
+        .card__img.card__img_330(data-aos="zoom-in-down")
           img.img(src=item.src)
-        .card__info.card__info_100
+        .card__info.card__info_100(data-aos="zoom-in-up")
           .card__info_title.heading #{item.heading}
           .card__info_main.taste__info
             .card__info_description.card__info_22 #{item.description}

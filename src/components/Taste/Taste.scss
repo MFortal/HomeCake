@@ -25,7 +25,10 @@
 
   &__info {
     flex-direction: row;
-    gap: 5px;
+    justify-content: space-between;
+    gap: 10px;
+
+    width: 100%;
   }
 }
 

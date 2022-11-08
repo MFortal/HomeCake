@@ -1,6 +1,9 @@
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 export let addAnimate = () => {
-  AOS.init();
+  AOS.init({
+    delay: 300,
+    easing: "ease",
+    once: true,
+  });
 };

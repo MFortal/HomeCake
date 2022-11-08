@@ -12,7 +12,7 @@ section.container.assortment.block.section_not_padding#assortment
   h1.heading.assortment__heading Ассортимент
   .cards
     each item in items
-      div(class='card '+item.class)
+      div(class='card '+item.class data-aos='zoom-in-up')
         .card__content
           .card__img
             img(class='img '+ item.classImg src=item.src)
