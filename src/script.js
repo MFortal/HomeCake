@@ -143,6 +143,10 @@ const setPaddingMain = () => {
 
 window.onload = function () {
   setPaddingMain();
+  // Убирание прелодера при полной загрузке
+  document
+    .querySelector(".preloader-container")
+    .classList.add("preloader_close");
 };
 
 window.onresize = function () {

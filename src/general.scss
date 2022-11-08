@@ -25,7 +25,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 10;
 }
 
 ul {
@@ -108,6 +108,67 @@ li {
 
   &:hover {
     fill: $color_pink;
+  }
+}
+
+/* Preloader */
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 11;
+  display: flex;
+  background-color: $color_header;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-container.preloader_close {
+  display: none;
+}
+
+.preloader {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $color_pink;
+  animation: preloader-spin 2s linear infinite;
+}
+.preloader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $color_line;
+  animation: preloader-spin 3s linear infinite;
+}
+.preloader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $color_saturatedPink;
+  animation: preloader-spin 1.5s linear infinite;
+}
+@keyframes preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
