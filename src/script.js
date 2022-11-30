@@ -7,11 +7,11 @@ import { addToggleEvent } from "./js/addToggleEvent.js";
 import { setOnloadEvent } from "./js/setOnloadEvent.js";
 
 // Якорь на кнопку "Связаться со мной"
-addHref(".offer__button", "#contact");
+//addHref(".offer__button", "#contact");
 // Якорь на кнопку "Посмотреть работы"
-addHref(".main__button", "#assortment");
+//addHref(".main__button", "#assortment");
 // Сладер
-checkBtns();
+//checkBtns();
 // Добавление событий раскрытия/закрытия для кнопок 'Еще'
 addToggleEvent();
 // Onload

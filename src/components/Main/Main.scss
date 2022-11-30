@@ -1,5 +1,6 @@
 .main {
-  height: 735px;
+  min-height: 735px;
+  height: 1px;
   position: relative;
 
   &__buttonText {
@@ -26,13 +27,13 @@
   }
 
   &__fotos {
-    height: inherit;
     position: relative;
-    height: 100%;
+    min-height: 100%;
+    bottom: 0;
   }
 
   &__foto2 {
-    height: 100%;
+    min-height: 100%;
     width: 37.9%;
     background-image: url("./img/_main/main2.jpg");
     background-size: cover;
@@ -44,8 +45,7 @@
 
   &__foto1 {
     width: 30.5%;
-    height: 55%;
-    //min-height: 400px;
+    min-height: 55%;
     border-radius: 50% 50% 0px 0px;
     background-image: url("./img/_main/main1.jpg");
     background-size: cover;
@@ -77,7 +77,7 @@
 
   &__row1_img {
     width: 90px;
-    height: 60px;
+    min-height: 60px;
 
     background: url("./img/_main/main4.jpg");
     border-radius: 50px 50px 0px 0px;
@@ -85,10 +85,10 @@
 
   &__row3_img {
     width: 60px;
-    height: 60px;
+    min-height: 60px;
 
     background: url("./img/_main/main3.jpg");
-    border-radius: 42px;
+    border-radius: 50%;
   }
 
   &__text {
