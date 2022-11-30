@@ -10,8 +10,10 @@ html(lang="ru")
         title Кондитерская Анны Солдатенко
     body
         header.header#header
-          nav.menu
-            ul.menu__ul
+          .burger
+            span
+          nav.menu.header__nav
+            ul.menu__ul.header__ul
               include components/Menu/Menu.pug
         main#main
           include components/Main/Main.pug
@@ -26,4 +28,4 @@ html(lang="ru")
           include components/Footer/Footer.pug
         .preloader-container
           .preloader
-        script(src='./script.js')
+        script(defer src='./script.js')

@@ -15,6 +15,8 @@ html {
   left: 0;
   right: 0;
   z-index: 10;
+
+  min-height: 50px;
 }
 
 ul {
@@ -40,11 +42,76 @@ body {
   overflow-x: hidden;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header {
   box-sizing: border-box;
 
   padding: 1.5% $indent;
   background: $color_header;
+}
+
+.burger {
+  display: none;
+  width: 20px;
+  position: absolute;
+  right: 7.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.burger span,
+.burger:before,
+.burger:after {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $color_saturatedPink;
+
+  transition: all 0.3s ease;
+}
+
+.burger:before,
+.burger:after {
+  content: "";
+}
+
+.burger:before {
+  bottom: 5px;
+}
+
+.burger:after {
+  top: 7px;
+}
+
+.header__nav.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color_back;
+  padding-top: 50px;
+
+  overflow: auto;
+}
+
+.burger.active span {
+  display: none;
+}
+
+.burger.active:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.burger.active:before {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 p,

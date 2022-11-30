@@ -1,20 +1,314 @@
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .burger,
+  .burger:before,
+  .burger:after {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__ul {
+    flex-direction: column;
+    gap: 35px;
+
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  html {
+    font-size: 15px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .main__row1_img {
+    width: 65px;
+    height: 35px;
+  }
+
+  .main__row3_img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .main__row1,
+  .main__row3 {
+    gap: 10px;
+  }
+
+  .main__h {
+    gap: 5px;
+  }
+
+  .main__info {
+    gap: 20px;
+  }
+
+  .ellipses {
+    width: 360px;
+    height: 70px;
+  }
+
+  .main {
+    height: 520px;
+  }
+
+  .main__foto1 {
+    height: 50%;
+  }
+
+  .main__foto2 {
+    width: 45%;
+  }
+
+  .card__info_title {
+    font-size: 1.8rem;
+  }
+
+  .card__info_price {
+    padding: 10px 16px;
+  }
+
   .taste__card {
     width: 46%;
   }
-}
 
-@media (min-width: 1399px) {
-  .main__foto1 {
-    min-height: 450px;
+  .taste__info {
+    gap: 5px;
+  }
+
+  .taste__text {
+    margin-top: 10px;
   }
 
   .buttonToggle {
-    padding: 35px 55px;
+    padding: 16px 50px;
+    margin-top: 10px;
+  }
+
+  .row {
+    min-height: 160px;
+  }
+
+  .assortment__heading {
+    margin-bottom: 35px;
+  }
+
+  .offer__content {
+    padding: 25px 15px;
+    gap: 10px;
+  }
+  .offer__title {
+    font-size: 2rem;
+  }
+  .offer__block {
+    justify-content: end;
+  }
+
+  .contact__map {
+    width: 470px;
+    height: 300px;
+  }
+
+  .card__img {
+    width: 50%;
+    min-height: 250px;
+  }
+
+  .card__info {
+    padding-top: 5px;
+  }
+
+  .taste__card .card__img {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+  }
+
+  .navigation {
+    gap: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .arrow {
+    width: 220px;
+    height: 25px;
+  }
+
+  .slider {
+    max-width: 85%;
+
+    &__review {
+      gap: 20px;
+    }
+  }
+
+  .block {
+    gap: 40px;
+  }
+
+  .taste__cards {
+    row-gap: 25px;
+  }
+
+  // Нужно заменить 8.5 на переменную indent
+  .offer {
+    padding-left: 0;
+    padding-right: 0;
+    &__content {
+      width: calc(50% - 8.5%);
+    }
+
+    &_margin-right {
+      margin-right: 8.5%;
+    }
+
+    &_margin-left {
+      margin-left: 8.5%;
+    }
+    &__desc {
+      font-size: 1.3rem;
+    }
+    &__info {
+      font-size: 1.2rem;
+    }
+  }
+  .header {
+    padding: 1.5% 8.5%;
   }
 }
 
-@media (min-width: 1599px) {
+@media (min-width: 1024px) and (max-width: 1398px) {
+  html {
+    font-size: 17px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .main {
+    height: 680px;
+  }
+
+  .main__foto1 {
+    height: 50%;
+  }
+
+  .main__foto2 {
+    width: 45%;
+  }
+
+  .card__info_title {
+    font-size: 2rem;
+  }
+  .taste__card {
+    width: 46%;
+  }
+
+  .offer__content {
+    padding: 25px 15px;
+    gap: 10px;
+  }
+  .offer__title {
+    font-size: 2rem;
+  }
+  .offer__block {
+    justify-content: end;
+  }
+
+  .contact__map {
+    width: 500px;
+    height: 350px;
+  }
+
+  .card__img {
+    width: 50%;
+    min-height: 330px;
+  }
+
+  .taste__card .card__img {
+    width: 100%;
+  }
+  .container {
+    padding-left: 8.5%;
+    padding-right: 8.5%;
+  }
+
+  // Нужно заменить 8.5 на переменную indent
+  .offer {
+    padding-left: 0;
+    padding-right: 0;
+    &__content {
+      width: calc(50% - 8.5%);
+    }
+
+    &_margin-right {
+      margin-right: 8.5%;
+    }
+
+    &_margin-left {
+      margin-left: 8.5%;
+    }
+  }
+
+  .header {
+    padding: 1.5% 8.5%;
+  }
+}
+
+@media (min-width: 1399px) and (max-width: 1598px) {
+  .block {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    gap: 40px;
+  }
+
+  .taste {
+    gap: 0;
+  }
+
+  .main__foto1 {
+    min-height: 400px;
+  }
+
+  .main__foto2 {
+    width: 40%;
+  }
+
+  .card__img {
+    height: 30vh;
+  }
+
+  .buttonToggle {
+    padding: 25px 45px;
+  }
+
+  .offer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1599px) and (max-width: 1918px) {
   html {
     font-size: 22px;
   }
@@ -26,6 +320,11 @@
   .row {
     min-height: 350px;
   }
+
+  .offer {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 1919px) {
@@ -33,8 +332,37 @@
     font-size: 24px;
   }
 
+  .row {
+    min-height: 300px;
+  }
+
+  .taste__card {
+    width: 47%;
+  }
+
+  .offer__content {
+    justify-content: space-evenly;
+  }
+
+  .contact__map {
+    width: 600px;
+    height: 500px;
+  }
+
+  .contact__info {
+    gap: 45px;
+  }
+
+  .main {
+    height: 950px;
+  }
+
   .main__info {
     gap: 40px;
+  }
+
+  .main__foto1 {
+    height: 60%;
   }
 
   .about__img {
@@ -42,5 +370,35 @@
   }
   .buttonToggle {
     padding: 45px 65px;
+  }
+
+  .about__main {
+    height: 870px;
+  }
+
+  .container {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+  }
+
+  // Нужно заменить 9 на переменную indent
+  .offer {
+    padding-left: 0;
+    padding-right: 0;
+    &__content {
+      width: calc(50% - 9.5%);
+    }
+
+    &_margin-right {
+      margin-right: 9.5%;
+    }
+
+    &_margin-left {
+      margin-left: 9.5%;
+    }
+  }
+
+  .header {
+    padding: 1.5% 9.5%;
   }
 }
